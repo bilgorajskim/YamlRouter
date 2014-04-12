@@ -1,0 +1,26 @@
+{
+    "name": "rafamaciel/package-name",
+    "description": "Service provider routes yml in Silex",
+    "keywords": ["yaml", "silex", "router"],
+    "homepage": "https://github.com/icehero/silex-opauth",
+    "licence": "MIT",
+    "require": {
+        "php": ">=5.3.0",
+         "symfony/yaml":"v2.2.0",
+        "symfony/config":"v2.2.0"
+    },
+    "require-dev": {
+        "silex/silex": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Rafael B. Maciel",
+            "email": "rafael@haxor.com.br"
+        }
+    ],
+    "autoload":{
+        "psr-0":{
+            "YamlRouter\\":"src/"
+        }
+    }
+}
