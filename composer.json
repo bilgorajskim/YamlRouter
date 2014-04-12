@@ -1,5 +1,5 @@
 {
-    "name": "rafamaciel/package-name",
+    "name": "rafamaciel/yaml-reouter",
     "description": "Service provider routes yml in Silex",
     "keywords": ["yaml", "silex", "router"],
     "homepage": "https://github.com/icehero/silex-opauth",
