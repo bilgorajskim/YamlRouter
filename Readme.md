@@ -48,3 +48,10 @@ hello:
   path: /post/{post_id}
   defaults: { _controller: 'Rafamaciel\BlogController::postAction' }
 ```
+
+You may also point to other routes yml files
+```yaml
+blog:
+  prefix: /blog
+  resource: blog.yml
+```
