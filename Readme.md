@@ -55,3 +55,6 @@ blog:
   prefix: /blog
   resource: blog.yml
 ```
+## Credits
+Credits: 
+This service provider has been built based on an [article](http://gonzalo123.com/2013/03/04/scaling-silex-applications-part-ii-using-routecollection/) written by [Gonzalo Ayuso](https://github.com/gonzalo123).
