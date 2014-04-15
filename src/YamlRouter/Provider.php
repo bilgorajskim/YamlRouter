@@ -13,11 +13,11 @@ class Provider implements ServiceProviderInterface{
     {
         $app['routes'] = $app->extend('routes', function (RouteCollection $routes, Application $app) {
             $file_locator = $app['router.path']?$app['router.path']:(__DIR__.'/../config/routes.yml');
-            $file_locator = explode('/', $file_locator);
-            $file_name = $file_locator[(count($file_locator)-1)];
+            $file_locator = explode(DIRECTORY_SEPARATOR, $file_locator);
+            $file_name = end($file_locator);
             unset($file_locator[(count($file_locator)-1)]);
             $file_locator = implode('/',$file_locator);
-            $loader     = new YamlFileLoader(new FileLocator($file_locator));
+            $loader = new YamlFileLoader(new FileLocator($file_locator));
             $collection = $loader->load($file_name);
             $routes->addCollection($collection);
             return $routes;
