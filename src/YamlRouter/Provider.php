@@ -16,7 +16,7 @@ class Provider implements ServiceProviderInterface{
             $file_locator = explode(DIRECTORY_SEPARATOR, $file_locator);
             $file_name = end($file_locator);
             unset($file_locator[(count($file_locator)-1)]);
-            $file_locator = implode('/',$file_locator);
+            $file_locator = implode(DIRECTORY_SEPARATOR,$file_locator);
             $loader = new YamlFileLoader(new FileLocator($file_locator));
             $collection = $loader->load($file_name);
             $routes->addCollection($collection);
