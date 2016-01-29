@@ -20,7 +20,7 @@ Add the package *"bilgorajskim/yaml-router"* to the composer.json file and updat
 ## Usage
 
 ### Parameters:
-***router.path:*** Your yml file path.
+***router.path:*** Your YAML file path.
 ### Registering
 
 ```php
@@ -29,7 +29,7 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application();
 
-$app->register(new YamlRouter\Provider(), array(
+$app->register(new YamlRouter\YamlRouterServiceProvider(), array(
     'router.path' => __DIR__.'/routing.yml',
 ));
 ```
